@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1080px"
+    android:layout_height="1920px"
+    android:orientation="vertical"
+    tools:context="com.hxe.platform.SuccessActivity">
+
+  <ImageView
+      android:id="@+id/success_logo"
+      android:scaleType="fitXY"
+      android:src="@drawable/logo"
+      android:layout_width="1080px"
+      android:layout_height="620px" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_below="@+id/success_logo"
+        android:layout_marginTop="20px"
+         android:gravity="center"
+        android:layout_width="1080px"
+        android:layout_height="150px">
+
+      <ImageView
+          android:scaleType="fitXY"
+          android:id="@+id/success_iv_name"
+          android:layout_marginLeft="20px"
+          android:src="@mipmap/et_name"
+          android:layout_width="120px"
+          android:layout_height="120px" />
+
+      <EditText
+          android:id="@+id/success_et_mobile"
+          android:layout_toRightOf="@+id/success_iv_name"
+          android:hint="请输入手机号码"
+          android:layout_marginRight="20px"
+          android:layout_width="900px"
+          android:layout_height="150px" />
+
+    </RelativeLayout>
+
+
+  <RelativeLayout
+      android:id="@+id/rl2"
+      android:layout_below="@+id/rl1"
+      android:layout_marginTop="20px"
+      android:gravity="center"
+      android:layout_width="1080px"
+      android:layout_height="150px">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/success_yanzheng"
+        android:layout_marginLeft="20px"
+        android:src="@mipmap/et_yanzheng"
+        android:layout_width="120px"
+        android:layout_height="120px" />
+
+    <EditText
+        android:id="@+id/success_et_yanzheng"
+        android:layout_toRightOf="@+id/success_yanzheng"
+        android:hint="输入短信验证码"
+        android:layout_width="680px"
+        android:layout_height="150px" />
+
+    <ImageView
+        android:id="@+id/success_iv_yanzheng"
+        android:layout_toRightOf="@+id/success_et_yanzheng"
+        android:src="@mipmap/yanzhengma"
+        android:layout_marginRight="20px"
+        android:layout_width="220px"
+        android:layout_height="150px" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/success_tv_s"
+        android:layout_toRightOf="@+id/success_et_yanzheng"
+        android:layout_marginTop="23px"
+        android:text="30s"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl3"
+      android:layout_below="@+id/rl2"
+      android:gravity="center"
+      android:layout_marginTop="10px"
+      android:layout_width="1080px"
+      android:layout_height="100px">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/success_login"
+        android:src="@mipmap/login"
+        android:layout_width="400px"
+        android:layout_height="100px" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl4"
+      android:layout_marginTop="10px"
+      android:gravity="center"
+      android:layout_below="@+id/rl3"
+      android:layout_width="1080px"
+      android:layout_height="100px">
+
+    <TextView
+        android:id="@+id/success_cg"
+        android:textColor="#ffff00"
+        android:text="使用常规登录方式"
+        android:layout_width="400px"
+        android:layout_height="80px" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_marginTop="50px"
+      android:layout_below="@+id/rl4"
+      android:layout_width="1080px"
+      android:gravity="center"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:text="使用其他登录方式"
+        android:layout_width="400px"
+        android:layout_height="80px" />
+
+    <ImageView
+        android:layout_marginTop="80px"
+        android:id="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/qq" />
+
+    <ImageView
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@+id/qq"
+        android:src="@mipmap/wx"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView" />
+
+  </RelativeLayout>
+
+</RelativeLayout>

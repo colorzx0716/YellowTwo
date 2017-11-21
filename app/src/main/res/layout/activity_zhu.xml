@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hxe.platform.ZhuActivity">
+
+    <!--<Button
+        android:id="@+id/btn_quxiao"
+        android:text="取消"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <android.support.v4.view.ViewPager
+        android:visibility="visible"
+        android:background="#f0f099"
+        android:id="@+id/zhu_vp"
+        android:layout_marginBottom="200px"
+        android:layout_width="1080px"
+        android:layout_height="1920px"></android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:background="#00ff33"
+        android:id="@+id/zhu_fl"
+        android:layout_marginBottom="200px"
+        android:layout_width="1080px"
+        android:layout_height="1920px"></FrameLayout>
+
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="1080px"
+    android:layout_height="200px">
+
+    <ImageView
+        android:id="@+id/zhu_yuyue"
+        android:layout_marginLeft="120px"
+        android:src="@drawable/yuyue"
+        android:layout_width="200px"
+        android:layout_height="200px" />
+
+    <ImageView
+        android:layout_toRightOf="@+id/zhu_yuyue"
+        android:id="@+id/b"
+        android:layout_marginLeft="110px"
+        android:layout_width="200px"
+        android:layout_height="200px" />
+
+    <ImageView
+        android:layout_toRightOf="@+id/b"
+        android:id="@+id/zhu_wo"
+        android:layout_marginLeft="110px"
+        android:layout_marginRight="120px"
+        android:src="@drawable/wo1"
+        android:layout_width="200px"
+        android:layout_height="200px" />
+
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/zhu_bott"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="390px"
+        android:src="@drawable/bott"
+        android:layout_width="300px"
+        android:layout_height="300px" />
+
+</RelativeLayout>
