@@ -164,7 +164,6 @@ public class SuccessActivity extends AutoLayoutActivity implements View.OnClickL
                     }
                 }
             });
-
         }
     };
 

@@ -9,6 +9,7 @@ import com.hxe.platform.service.DemoIntentService;
 import com.hxe.platform.service.DemoPushService;
 import com.igexin.sdk.PushManager;
 import com.mob.MobSDK;
+import com.squareup.leakcanary.LeakCanary;
 import com.zhy.autolayout.config.AutoLayoutConifg;
 
 /**
@@ -38,6 +39,11 @@ public class MyApp extends Application {
                 )
                 .build()
         );
+
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            return;
+              }
+          LeakCanary.install(this);
 
     }
 }

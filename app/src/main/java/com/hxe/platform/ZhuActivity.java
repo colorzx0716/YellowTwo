@@ -84,8 +84,9 @@ public class ZhuActivity extends AutoLayoutActivity implements View.OnClickListe
         });
 
         //默认是显示第一页
-        zhu_vp.setCurrentItem(0);
-        zhu_yuyue.setImageResource(R.drawable.yuyue2);
+        getSupportFragmentManager().beginTransaction().replace(R.id.zhu_fl,new Fragment2()).commit();
+       /* zhu_vp.setCurrentItem(0);
+        zhu_yuyue.setImageResource(R.drawable.yuyue2);*/
 
 
        /* btn_quxiao = findViewById(R.id.btn_quxiao);

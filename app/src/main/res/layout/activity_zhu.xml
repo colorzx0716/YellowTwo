@@ -14,7 +14,7 @@
         android:layout_height="wrap_content" />-->
 
     <android.support.v4.view.ViewPager
-        android:visibility="visible"
+        android:visibility="gone"
         android:background="#f0f099"
         android:id="@+id/zhu_vp"
         android:layout_marginBottom="200px"
@@ -22,7 +22,7 @@
         android:layout_height="1920px"></android.support.v4.view.ViewPager>
 
     <FrameLayout
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="#00ff33"
         android:id="@+id/zhu_fl"
         android:layout_marginBottom="200px"
